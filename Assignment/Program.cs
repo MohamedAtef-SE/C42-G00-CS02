@@ -20,6 +20,17 @@
             #endregion
 
 
+            #region 02.Write C# program that Convert a string to an integer, but the string contains non-numeric characters. And mention what will happen 
+            
+            //Console.Write("Enter your name: ");
+
+            //string? message = Console.ReadLine();
+
+            //int result = Convert.ToInt32(message);
+            //// Through Unhandled Exception because i did't use Defense Code or TryParse Method.
+
+            #endregion
+
         }
     }
 }
