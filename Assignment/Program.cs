@@ -1,4 +1,5 @@
 ﻿using System.Runtime.InteropServices;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Assignment
 {
@@ -96,6 +97,46 @@ namespace Assignment
 
             #endregion
 
+            #region 08. Write a program that calculates the simple interest given the principal amount, rate of interest, and time. The formula for simple interest is Interest = (principal * rate * time) / 100.
+
+            //Console.Write("Enter principal amount:  ");
+            //bool flagAmount = decimal.TryParse(Console.ReadLine(), out decimal amount);
+            //if (flagAmount)
+            //{
+            //    Console.Write("Enter rate of interest:  ");
+            //    bool flagInterest = decimal.TryParse(Console.ReadLine(), out decimal rate);
+            //    if (flagInterest)
+            //    {
+            //        Console.Write("Enter Duration time:  ");
+            //        bool flagTime = int.TryParse(Console.ReadLine(), out int time);
+            //        if (flagTime)
+            //        {
+            //            decimal interest = (rate * time * amount) / 100;
+            //            Console.WriteLine($"The Interest is {interest} EGP");
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine("Enter valid Time.");
+
+            //        }
+
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Enter valid Rate.");
+
+            //    }
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Enter valid Amount."); 
+            //}
+            
+
+            #endregion
+           
         }
+        
+        
     }
 }
