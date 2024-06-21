@@ -208,6 +208,12 @@ namespace Assignment
             //// Answer is : C )
 
             #endregion
+
+            #region 13. Which of the following statements is correct about the C#.NET code snippet given below?
+
+            // Asnwer is f) A value 1 will be assigned to d.
+
+            #endregion
         }
 
 
