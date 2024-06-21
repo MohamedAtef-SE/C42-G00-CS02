@@ -21,13 +21,22 @@
 
 
             #region 02.Write C# program that Convert a string to an integer, but the string contains non-numeric characters. And mention what will happen 
-            
+
             //Console.Write("Enter your name: ");
 
             //string? message = Console.ReadLine();
 
             //int result = Convert.ToInt32(message);
             //// Through Unhandled Exception because i did't use Defense Code or TryParse Method.
+
+            #endregion
+
+            #region 03. Write C# program that Perform a simple arithmetic operation with floating-point numbers And mention what will happen
+
+           // float Number01 = 2.55f, Number02 = 4.25f;
+           // float result = Number01 + Number02;
+
+           //Console.WriteLine(result);
 
             #endregion
 
