@@ -168,7 +168,38 @@ namespace Assignment
 
             #endregion
 
+            #region 11. Write a program that takes the date from user and displays it in various formats using string interpolation.
 
+            /// Ex :
+            /// Today’s date : 20 , 11 , 2001
+            /// Today's date : 20 / 11 / 2001
+            /// Today's date : 20 – 11 – 2001
+            /// 
+            
+            //DateTime date = DateTime.Now;
+
+            //Console.Write("Day: ");
+            //int Day = Convert.ToInt32(Console.ReadLine());
+
+            //Console.Write("Month: ");
+            //int Month = Convert.ToInt32(Console.ReadLine()); ;
+
+            //Console.Write("Year: ");
+            //int Year = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine("Choose your favorite pattern: ");
+            //Console.WriteLine("Press [1] for dd,MM,yyyy");
+            //Console.WriteLine("Press [2] for dd/MM/yyyy");
+            //Console.WriteLine("Press [3] for dd-MM-yyyy");
+            //int pattern = int.Parse(Console.ReadLine() ?? "1");
+            //string UserDate = "";
+            //if (pattern == 1) UserDate = $"{Day},{Month},{Year}";
+            //else if (pattern == 2) UserDate = $"{Day}/{Month}/{Year}";
+            //else if (pattern == 3) UserDate = $"{Day}-{Month}-{Year}";
+
+            //Console.WriteLine(UserDate);
+
+            #endregion
 
 
         }
