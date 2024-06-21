@@ -1,4 +1,6 @@
-﻿namespace Assignment
+﻿using System.Runtime.InteropServices;
+
+namespace Assignment
 {
     class Program
     {
@@ -60,6 +62,30 @@
 
             #endregion
 
+            #region 06. Write C# program that Assigning one reference type variable to another and modifying the object through one variable and mention what will happen
+
+            //Test TA = new Test();
+
+            //TA.X = 10;
+            //TA.Y = 20;
+
+            //Test TB = new Test();
+
+            //TB.X = 30;
+            //TB.Y = 40;
+            //int XR = TB.X + TB.Y;
+    
+            //TB = TA;
+
+            //TA.X = 100;
+            //TA.Y = 200;
+
+            //Console.WriteLine(TB.X + TB.Y); // 300
+            //// Because with  Assigning one reference type variable to another we not assign the values we assign
+            //// the reference to the object in the HEAP, after assgin operation happend the value of object TB now its Unreachable,
+            //// beacuse TA & TB point to the same object in the HEAP.
+
+            #endregion
         }
     }
 }
