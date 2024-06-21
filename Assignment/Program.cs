@@ -39,12 +39,24 @@
 
             #endregion
 
-            #region Write C# program that Extract a substring from a given string.
+            #region 04. Write C# program that Extract a substring from a given string.
 
             //Console.Write("Enter your full name: ");
             //string? fullName = Console.ReadLine();
-            
+
             //Console.WriteLine(fullName.Substring(0,fullName.Length - 4));
+
+            #endregion
+
+            #region 05. Write C# program that Assigning one value type variable to another and modifying the value of one variable and mention what will happen
+
+            //int X = 10;
+            //int Y = 20;
+            //Y = X;
+            //X = 5;
+            //Console.WriteLine(Y); // 10
+            //// Thats because we assigned perimative datatype to another perimative datatype ,so what happend here we just take a copy
+            //// from value type variable and store it in perimative data type in stack.
 
             #endregion
 
