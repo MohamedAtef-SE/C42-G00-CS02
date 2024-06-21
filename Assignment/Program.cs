@@ -74,7 +74,7 @@ namespace Assignment
             //TB.X = 30;
             //TB.Y = 40;
             //int XR = TB.X + TB.Y;
-    
+
             //TB = TA;
 
             //TA.X = 100;
@@ -86,6 +86,16 @@ namespace Assignment
             //// beacuse TA & TB point to the same object in the HEAP.
 
             #endregion
+
+            #region 07. Write C# program that take two string variables and print them as one variable 
+            //Console.Write("Enter your first name: ");
+            //string FirstName = Console.ReadLine();
+            //Console.Write("Enter your Last name: ");
+            //string LastName = Console.ReadLine();
+            //Console.WriteLine($"Welcome {FirstName} {LastName}, Back....");
+
+            #endregion
+
         }
     }
 }
