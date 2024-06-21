@@ -175,7 +175,7 @@ namespace Assignment
             /// Today's date : 20 / 11 / 2001
             /// Today's date : 20 – 11 – 2001
             /// 
-            
+
             //DateTime date = DateTime.Now;
 
             //Console.Write("Day: ");
@@ -201,7 +201,13 @@ namespace Assignment
 
             #endregion
 
+            #region 12. What is the output of the following C# code?
 
+            //DateTime date = new DateTime(2024, 6, 14); 
+            //Console.WriteLine($"The event is on {date:MM/dd/yyyy}");
+            //// Answer is : C )
+
+            #endregion
         }
 
 
