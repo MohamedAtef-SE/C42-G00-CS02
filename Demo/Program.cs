@@ -35,8 +35,24 @@
 
             #endregion
 
+            #region Application Memory
+
+            /*
+             * Any Application Memory depend on its Server RAM Memory.
+             * Operating system Responsible for Handling Memory on Server.
+             * CLR (Common Language Runtime) [tiny operating system] Responsible for handling Application Memory, through Garbage Collector.
+             * Garbage collector manage the application memory by distruting it for two parts [Stack , HEAP].
+             * Stack approach LIFO | FILO.
+             * Stack size depend on OS, If OS 32 bit stack size will be 1 MB, If OS 64 bit stack size will be 4 MB on Console Application.
+             * HEAP Memory is Flexable Shrink or Expand depend on needs, by CLR Calling OS and asked to increase memory for HEAP.
+             * in HEAP after application done any rest of memory unused in HEAP OS return it back by CLR.
+             */
+
+            #endregion
+
             #region Value Type
 
+            // ValueType (Primitive Datatype)
             //int X;
             //// CLR Will Allocate 4 Uninitialized Bytes at STACK
             //// int: C# Keyword
@@ -56,6 +72,7 @@
 
             #region Refrence Type
 
+            // ReferenceType (non-Primitive Datatype)
             //Point P1;
             //// Declare for Refrence of type "Point", Refering to NULL.
             //// This Refrence 'P1' Can Refer to an Object from type "Point" OR another type "Inherting" From Class "Point".
