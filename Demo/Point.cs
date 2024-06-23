@@ -10,6 +10,12 @@ namespace Demo
     {
         public int x;
         public int y;
-        
+
+        public override string ToString()
+        {
+            //using $"{}"  << String interpolation
+            return $"{x} , {y}";
+        }
+
     }
 }

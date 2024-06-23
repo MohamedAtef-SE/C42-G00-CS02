@@ -1,7 +1,10 @@
-﻿namespace Demo
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace Demo
 {
     class Program
     {
+       
         //Entry Point
         static void Main()
         {
@@ -35,8 +38,24 @@
 
             #endregion
 
+            #region Application Memory
+
+            /*
+             * Any Application Memory depend on its Server RAM Memory.
+             * Operating system Responsible for Handling Memory on Server.
+             * CLR (Common Language Runtime) [tiny operating system] Responsible for handling Application Memory, through Garbage Collector.
+             * Garbage collector manage the application memory by distruting it for two parts [Stack , HEAP].
+             * Stack approach LIFO | FILO.
+             * Stack size depend on OS, If OS 32 bit stack size will be 1 MB, If OS 64 bit stack size will be 4 MB on Console Application.
+             * HEAP Memory is Flexable Shrink or Expand depend on needs, by CLR Calling OS and asked to increase memory for HEAP.
+             * in HEAP after application done any rest of memory unused in HEAP OS return it back by CLR.
+             */
+
+            #endregion
+
             #region Value Type
 
+            // ValueType (Primitive Datatype)
             //int X;
             //// CLR Will Allocate 4 Uninitialized Bytes at STACK
             //// int: C# Keyword
@@ -56,6 +75,7 @@
 
             #region Refrence Type
 
+            // ReferenceType (non-Primitive Datatype)
             //Point P1;
             //// Declare for Refrence of type "Point", Refering to NULL.
             //// This Refrence 'P1' Can Refer to an Object from type "Point" OR another type "Inherting" From Class "Point".
@@ -76,6 +96,116 @@
 
             //P2 = P1;
 
+
+            #endregion
+
+            #region Object
+
+            #region Part 01
+
+            //// Generic Parameter: its a Variable accept any data types.
+            //// Generic method: its method has Generic Parameter.
+            //static void Print<T,T2>(T item,T2 item02)
+            //{
+
+            //    Console.Write(item);
+            //    Console.Write(' ');
+            //    Console.WriteLine(item02);
+            //}
+            //Print<string,int>("Ahmed",2024);
+            //Print<char,bool>('A', true);
+
+
+            //// Object before Generics solve two Main problem:
+            //// 01. Build Flixable Method (Before Generics Method in 2005);
+            ////build method flexable before Generic Method With Object as a Data type Params [Pass By Reference]:
+
+            //static void Display(Object item)
+            //{
+
+            //    Console.WriteLine(item);
+
+            //}
+            //Display("Ahmed Nasr");
+            //Display(2024);
+
+            //// "Not Recommanded" Because this way of creating flixable method create [Boxing Problem],
+            //// When we send value of Primative DataType as an argument to store it in Object NonPrimative DataType.
+            //// by doing this we store value of varible datatype should to stored in Stack memory, we store it in HEAP
+            //// Build Box and put it in it and this box created in The HEAP memory.
+            //// Another issue Can't put any constrait for reciving data type, must create Defensive code.
+
+            ///// 02. Set Of Behaviours (Functions):
+            /////    01. toString() Default value returned the Type of instance attached with its namespace.
+            /////    02. GetHashCode() return Unique code Generated based on address <new Point()> of object used in HashTables. 
+            /////    03. Equals() Default behaviour Comapring two object based on Adress. return boolen Value [True | False]
+            /////    04. GetType() returned Datatype of Object  return namespace.DatatypeName [Can't override on it]
+
+            //Point P1 = new Point();
+            //Point P2 = new Point();
+
+            //// toString();
+            //Console.WriteLine(P1.ToString()); // Default Value => Demo.Point
+            ////After override
+            //Console.WriteLine(P1.ToString()); // States values as a Sting 0 , 0 
+
+            //// GetHashCode();
+            //Console.WriteLine($"P1 hashCode: {P1.GetHashCode()}");
+            //Console.WriteLine($"P2 hashCode: {P2.GetHashCode()}");
+
+            //// Equals();
+            //Console.WriteLine(P1.Equals(P2)); // false
+
+            //// GetType();
+            //Console.WriteLine(P1.GetType()); // Demo.Point
+            //Console.WriteLine(P1.GetType().Name); // Point
+            //Console.WriteLine(P1.GetType().Namespace); // Demo
+
+            //object O1;
+            ///// Declare for Refernce of Type "Object", Refering to NULL.
+            ///// 4 Bytes have been Allocated at STACK for the Refernce "O1".
+            ///// 0 Bytes have been Allocated at HEAP.
+            ///// The Reference 'O1' can refer to an instance of type "object" OR of another type "Inherting from Object".
+
+
+            //O1 = new object();
+            ///// <new> Generates 4 steps:
+            ///// 01. Allocate required number of bytes for the object at HEAP (Object size + CLR overhead Variables )
+            ///// 02. Initialize that allocated bytes with the Default value of its Datatype.
+            ///// 03. Call user-defind Constructor() [if exist].
+            ///// 04. Return the Address of allocated object to the Refernece 'P1'.
+            ///// 
+
+
+            //O1 = new string("Ahmed Nasr");
+            //O1 = "Ahmed Nasr"; // Syntax Sugar
+
+            //// Boxing Problem
+            //O1 = 5;
+            //O1 = 'A';
+            //O1 = true;
+            //O1 = new DateTime();
+            //O1 = new DateOnly();
+            //O1 = new TimeOnly();
+
+            #endregion
+
+            #region Part 02
+
+            //// string is a object
+            //object O1 = new string("Ahmed Nasr");
+            //// Parent = Child
+
+            //// Dog is a Animal
+            //// Animal = Dog
+            //// Animal = Cat
+            //// Animal = Fox
+
+            //// Fox = Animal <ERROR>
+            //// Fox = (Fox) Animal  [Unsafe Casting] in this example i promise compiler the Animal refer to a Fox now. 
+
+
+            #endregion
 
             #endregion
 
